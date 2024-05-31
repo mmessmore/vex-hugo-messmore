@@ -36,6 +36,14 @@
         {{ end }}
         {{ end }}
 
+        {{ if site.Params.offerup.enable }}
+        {{ if .Params.offerupId }}
+        <!-- Reverb item listing link -->
+        <a class="btn btn-main mb-5" href="https://offerup.com/item/detail/{{ .Params.offerupId}}"><img class="shopbtn offerupbtn"
+            src="/images/offerup.png"></a>
+        {{ end }}
+        {{ end }}
+
         <div class="content">{{.Content}}</div>
       </div>
     </div>
