@@ -18,6 +18,16 @@
 					<a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a>
 					{{ end }}
 					{{ end }}
+          {{ if site.Params.offerup.enable}}
+          {{ if site.Params.offerup.store}}
+          <figure>
+          <a href="https://offerup.com/profile/{{site.Params.offerup.store}}">
+            <img src="/img/offerup.png" alt="OfferUp">
+            <figcaption>My OfferUp Profile></figcaption>
+          </a>
+          <figure>
+          {{end}}
+          {{end}}
 				</div>
 			</div>
 		</div><!-- .row close -->
