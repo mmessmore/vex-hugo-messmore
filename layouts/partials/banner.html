@@ -18,19 +18,23 @@
 					<a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a>
 					{{ end }}
 					{{ end }}
-          {{ if site.Params.offerup.enable}}
-          {{ if site.Params.offerup.store}}
-          <figure>
-          <a href="https://offerup.com/profile/{{site.Params.offerup.store}}">
-            <img src="/images/offerup.png" alt="OfferUp">
-            <figcaption>My OfferUp Profile></figcaption>
-          </a>
-          <figure>
-          {{end}}
-          {{end}}
 				</div>
 			</div>
 		</div><!-- .row close -->
+    <div class="row">
+      {{ if site.Params.offerup.enable}}
+      {{ if site.Params.offerup.store}}
+      <div class="col-md-4 text-center">
+        <figure>
+        <a href="https://offerup.com/profile/{{site.Params.offerup.store}}">
+          <img src="/images/offerup.png" alt="OfferUp">
+          <figcaption>My OfferUp Profile></figcaption>
+        </a>
+        <figure>
+      </div>
+      {{end}}
+      {{end}}
+    </div>
 	</div><!-- .container close -->
 </section><!-- header close -->
 {{- end }}
